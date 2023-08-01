@@ -7,16 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header></header>
+    <header>
+        <h1 id="roll">20UCS161</h1>
+        <h1 class="main-heading">AI Class Assignment</h1>
+        <h1 id="name">Pratham Nagaria</h1>
+    </header>
     <main>
-        <label for="row-no">Enter the no. of rows : </label>
-        <input type="number" name="row" id="row-no" value="5">
-        <label for="col-no">Enter the no. of coloumns</label>
-        <input type="number" name="col" id="col-no" value="5">
+        <div class="wrap-input">
+            <label for="row-no">Enter the no. of rows : </label>
+            <input type="number" name="row" id="row-no" value="5" min="1" max="150">
+            <br>
+            <br>
+            <br>
+            <label for="col-no">Enter the no. of coloumns</label>
+            <input type="number" name="col" id="col-no" value="5" min="1" max="150">
+        </div>
+        <br>
+        <br>
         
-        <button type="button" onclick="create_grid()">Create Grid</button>
-        <button type="button" onclick="generate_grid()">Generate Grid</button>
-        <button type="button" onclick="show_path()">Show Path</button>
+        <div class="button-wrap">
+            <button type="button" onclick="create_grid()">Create Grid</button>
+            <button type="button" onclick="generate_grid()">Generate Grid</button>
+            <button type="button" onclick="show_path()">Show Path</button>
+        </div>
         <section id="grid-section" >
             <div id="matrix-grid"></div>
         </section>

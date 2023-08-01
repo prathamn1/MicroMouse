@@ -1,6 +1,33 @@
-html,body {
-    padding :0;
-    margin:0;
+html,
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: blue;
+  background-color: rgb(150, 206, 255);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+header {
+  
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    border-bottom: 4px solid rgb(13, 74, 239);
+}
+  
+header .main-heading {
+    font-size: 2.5rem;
+    justify-content: center;
+    /* text-align: center; */
+    color: whitesmoke;
+    margin: auto;
 }
 
 #grid-section {
@@ -41,7 +68,7 @@ html,body {
 }
 
 .path {
-    background-color: rgb(100, 149, 237,0.5);
+    background-color: rgba(0, 255, 0,1);
 }
 
 
@@ -50,4 +77,65 @@ html,body {
     font-weight: bold;
     margin:50% 50%;
     color:rgba(30, 0, 255, 0.3);
+}
+
+
+input {
+    background-color: aquamarine;
+    width: fit-content;
+    margin: auto;
+}
+  
+button {
+    width: fit-content;
+    background-color: aqua;
+    margin-bottom: 10px;
+        
+}
+  
+input,
+button {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 0.7rem 2rem;
+    border-radius: 0.2rem;
+    border: none;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+}
+
+
+button:hover {
+    transition: background-color,0.7s;
+    background-color: rgb(35, 35, 251);
+    color:whitesmoke;
+}
+
+main {
+  margin-left: 30px;
+}
+
+input:focus {
+    background-color: antiquewhite;
+}
+
+.wrap-input {
+    margin-top:10px;
+}
+
+.button-wrap {
+   
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+}
+
+input:invalid {
+    background-color: rgb(202, 98, 98);
+    border: 5px solid red;
+}
+
+footer {
+    margin-top: 30px;
 }
